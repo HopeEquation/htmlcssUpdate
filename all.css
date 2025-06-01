@@ -1,3 +1,581 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+*, *:before, *:after{
+
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 150%;
+    font-family: "Noto Sans TC", serif;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header{
+    list-style: none;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 40px;
+    font-size: 28px;
+    font-weight: 700;
+    background: #FBFBFB;
+}
+
+.header a{
+    color: black;
+}
+
+.header a:hover{
+    color: #0027D5;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hero-img{
+    width: 960px;
+    max-width: 100%;
+    height: 834px;
+    max-height: 100%;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.hero-content{
+    width: 960px;
+    height: auto;
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
 h1{
-    color: red;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: "Noto Sans TC", serif;
+    margin-bottom: 63px;
+}
+
+.hero-content h1{
+    color: #0027D5;
+    font-family: "Noto Sans TC", serif;
+}
+.hero-content h3{
+    color: #0027D5;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.banner{
+    display: flex;
+    background: #FBFBFB;
+    max-width: 1920px;
+    margin: 0 auto;
+    border-top: solid 1px #6C757D;
+    border-bottom: solid 1px #6C757D;
+}
+
+.banner-img{
+    width: 948px;
+    margin-right: 24px;
+    max-height: 100%;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/About%20Section.png?raw=true");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+  }
+
+.banner-content{
+    width: 948px;
+    height: auto;
+    padding-top: 207px;
+    padding-bottom: 207px;
+}
+
+.banner-content ul{
+    max-width: 636px;
+}
+
+.banner a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height:150%;
+    color: #4B4B4B;
+    background: white;
+    border: solid 1px #4B4B4B;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 40px;
+  }
+
+.banner a:hover{
+    color: white;
+    background: #0027D5;
+}
+
+time{
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: "Noto Sans TC", serif;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+h3{
+    color: #0027D5;
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: "Noto Sans TC", serif;
+}
+
+.tag span{
+    margin-left: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background: #0027D5; 
+    color: white;
+    font-size: 16px;
+    border-radius: 40px;
+    font-family: "Noto Sans TC", serif;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 8px;
+    font-family: "Noto Sans TC", serif;
+  }
+
+p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    overflow:hidden;
+    -webkit-line-clamp: 2;
+    line-height: 150%;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #4B4B4B;
+    margin-bottom: 24px;
+    font-family: "Noto Sans TC", serif;
+}
+
+.wrapper{
+    max-width: 1320px;
+    margin: 0 auto;
+    font-family: "Noto Sans TC", serif;
+    padding: 0 12px;
+    background: #FBFBFB;
+}
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #FBFBFB;
+    gap: 24px;
+}
+
+.card {
+    max-width: calc((100% - 48px) / 3);
+    height: auto;
+    border: none;
+    display: block;
+    background: #FBFBFB;
+}
+
+.blog img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.card a{
+    font-size: 16px;
+    color: #4B4B4B;
+    background: white;
+    border: solid 1px #4B4B4B;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 40px;
+    font-family: "Noto Sans TC", serif;
+}
+
+.blog a:hover{
+    color: white;
+    background: #0027D5;
+}
+  
+.search{
+    margin: 0 auto;
+    max-width: 1920px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background: #FBFBFB;
+}
+
+.outline{
+    border: solid 1px #4B4B4B;  
+    border-radius: 40px;
+    max-width: 416px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: white;
+}
+
+.search span{
+    font-size: 24px;
+    color: #4B4B4B;
+    position: relative;
+    left: 25px;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    position: relative;
+    left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4B4B4B;
+    width: 316px;
+    font-family: "Noto Sans TC", serif;
+}
+
+.page{
+    background: #FBFBFB;
+    max-width: 1920px;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.page-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 328px;
+    margin: 0 auto;
+    height: 56px;
+    border-radius: 40px;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: white;
+}
+
+.page a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #4B4B4B;
+    font-family: "Noto Sans TC", serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 40px;
+}
+
+.page a:hover{
+    color: #0027D5;
+}
+
+.page a:active{
+    background-color: #0027D5;
+    color: white;
+}
+
+.footer{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #FBFBFB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 1px #6C757D;
+}
+
+.footer a{
+    font-size: 32px;
+    font-family: "Noto Sans TC", serif;
+    font-weight: 500;
+    color: black;
+}
+
+.footer a:hover{
+    color: #0027D5;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    height: auto;
+    padding: 10px;
+}
+
+.social a{
+    color: #0027D5;
+    font-weight: 500;
+    display: block;
+    font-size: 16px;
+    width: 24px;
+}
+
+.copyright{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: white;
+}
+
+.copyright {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    font-family: "Noto Sans TC", serif;
+    font-weight: 500;
+}
+
+
+@media (max-width: 600px){
+.wrapper{
+    max-width: 375px;
+    height:auto;
+    display: block;
+}
+
+.header{
+    max-width: 375px; 
+    height: auto;
+}
+
+.hero{
+    max-width: 375px;
+    height: auto;
+    display: block;
+}
+
+.hero-img{
+    max-width: 375px;
+    height: 375px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section.png?raw=true");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.hero-content{
+    max-width: 375px;
+    height: auto;
+    padding-left: 24px;
+    padding-top:24px;
+    padding-bottom: 24px;
+}
+
+h1{
+    font-size: 52px;
+}
+
+.hero-content ul{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.banner{
+    max-width: 375px;
+    height: auto;
+    display: block;
+}
+
+.banner-img{
+    max-width: 100%;
+    height: 375px;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/blog/About%20Section.png?raw=true");
+    background-size: cover;
+    background-position: center;
+    margin-right: 0px;
+}
+
+.banner-content{
+    width: 100%;
+    height: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.banner-content ul{
+    max-width:100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.banner-content a{
+    max-width:100%;
+    height: auto;
+}
+
+.tag{
+    margin-top: 10px;
+}
+
+.blog{
+    max-width: 100%;
+    margin: 0 auto;
+    background: #FBFBFB;
+    padding-right: 12px;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog li ul{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.blog li{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.blog li img{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.i{
+    max-width: 100%;
+}
+  
+.search{
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background: #FBFBFB;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.outline{
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.search input{
+    width: 70%;
+}
+
+.page{
+    max-width: 100%;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-wrap: wrap;
+}
+
+.page-ul{
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.footer{
+    display: none;
+}
+
+.copyright{
+    max-width: 375px;
+}
 }
