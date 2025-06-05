@@ -47,7 +47,6 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
-
 *, *:before, *:after{
 
     box-sizing: border-box;
@@ -56,6 +55,7 @@ border-spacing: 0;
 body{
     line-height: 150%;
     font-family: "Noto Sans TC", serif;
+    font-weight: 500;
     display: block;
 }
 
@@ -65,10 +65,7 @@ a{
 }
 
 .header{
-    list-style: none;
-    max-width: 1920px;
     margin: 0 auto;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,15 +88,13 @@ a{
 .hero{
     display: flex;
     justify-content: center;
-    max-width: 1920px;
     margin: 0 auto;
 }
 
 .hero-img{
-    width: 960px;
+    width: 50%;
     max-width: 100%;
     height: 834px;
-    max-height: 100%;
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true");
     background-size: cover;
     object-fit: cover;
@@ -107,7 +102,7 @@ a{
 }
 
 .hero-content{
-    width: 960px;
+    width: 50%;
     height: auto;
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
     background-size: cover;
@@ -119,7 +114,6 @@ a{
 h1{
     font-size: 120px;
     font-weight: 900;
-    font-family: "Noto Sans TC", serif;
     margin-bottom: 63px;
 }
 
@@ -136,16 +130,14 @@ h1{
 .banner{
     display: flex;
     background: #FBFBFB;
-    max-width: 1920px;
     margin: 0 auto;
     border-top: solid 1px #6C757D;
     border-bottom: solid 1px #6C757D;
 }
 
 .banner-img{
-    width: 948px;
+    width: 50%;
     margin-right: 24px;
-    max-height: 100%;
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/About%20Section.png?raw=true");
     background-size: cover;
     object-fit: cover;
@@ -153,7 +145,7 @@ h1{
   }
 
 .banner-content{
-    width: 948px;
+    width: 50%;
     height: auto;
     padding-top: 207px;
     padding-bottom: 207px;
@@ -164,9 +156,7 @@ h1{
 }
 
 .banner a{
-    text-decoration: none;
     font-size: 16px;
-    line-height:150%;
     color: #4B4B4B;
     background: white;
     border: solid 1px #4B4B4B;
@@ -184,7 +174,6 @@ h1{
 
 time{
     font-size: 16px;
-    line-height: 150%;
     font-weight: 500;
     font-family: "Noto Sans TC", serif;
 }
@@ -192,13 +181,11 @@ time{
 .tag{
     display: flex;
     align-items: center;
-    height: 36px;
 }
 
 h3{
     color: #0027D5;
     font-size: 24px;
-    line-height: 150%;
     font-weight: 500;
     font-family: "Noto Sans TC", serif;
 }
@@ -213,7 +200,6 @@ h3{
     color: white;
     font-size: 16px;
     border-radius: 40px;
-    font-family: "Noto Sans TC", serif;
 }
 
 h2{
@@ -221,7 +207,6 @@ h2{
     font-weight: 700;
     line-height: 150%;
     margin-top: 8px;
-    font-family: "Noto Sans TC", serif;
   }
 
 p{
@@ -229,7 +214,6 @@ p{
     -webkit-box-orient: vertical; 
     overflow:hidden;
     -webkit-line-clamp: 2;
-    line-height: 150%;
     margin-top: 8px;
     font-size: 16px;
     color: #4B4B4B;
@@ -240,7 +224,6 @@ p{
 .wrapper{
     max-width: 1320px;
     margin: 0 auto;
-    font-family: "Noto Sans TC", serif;
     padding: 0 12px;
     background: #FBFBFB;
 }
@@ -248,7 +231,6 @@ p{
 .blog{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1920px;
     margin: 0 auto;
     background: #FBFBFB;
     gap: 24px;
@@ -278,7 +260,6 @@ p{
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 40px;
-    font-family: "Noto Sans TC", serif;
 }
 
 .blog a:hover{
@@ -288,7 +269,6 @@ p{
   
 .search{
     margin: 0 auto;
-    max-width: 1920px;
     padding-top: 80px;
     padding-bottom: 40px;
     background: #FBFBFB;
@@ -319,12 +299,10 @@ p{
     font-weight: 500;
     color: #4B4B4B;
     width: 316px;
-    font-family: "Noto Sans TC", serif;
 }
 
 .page{
     background: #FBFBFB;
-    max-width: 1920px;
     padding-top: 40px;
     margin: 0 auto;
     padding-bottom: 80px;
@@ -336,7 +314,6 @@ p{
     align-items: center;
     max-width: 328px;
     margin: 0 auto;
-    height: 56px;
     border-radius: 40px;
     gap: 5px;
     padding-left: 10px;
@@ -350,7 +327,6 @@ p{
     text-align: center;
     text-decoration: none;
     color: #4B4B4B;
-    font-family: "Noto Sans TC", serif;
     font-size: 16px;
     font-weight: 500;
     border-radius: 40px;
@@ -366,7 +342,6 @@ p{
 }
 
 .footer{
-    max-width: 1920px;
     margin: 0 auto;
     padding: 80px 80px;
     background: #FBFBFB;
@@ -378,7 +353,6 @@ p{
 
 .footer a{
     font-size: 32px;
-    font-family: "Noto Sans TC", serif;
     font-weight: 500;
     color: black;
 }
@@ -391,7 +365,6 @@ p{
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    height: auto;
     padding: 10px;
 }
 
@@ -403,19 +376,14 @@ p{
     width: 24px;
 }
 
-.copyright{
-    max-width: 1920px;
+.copyright {
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 24px;
     background: white;
-}
-
-.copyright {
     font-size: 16px;
-    color: black;
-    text-align: center;
-    font-family: "Noto Sans TC", serif;
+    color: black; 
+    text-align: center; 
     font-weight: 500;
 }
 
@@ -439,7 +407,7 @@ p{
 }
 
 .hero-img{
-    max-width: 375px;
+    width: 100%;
     height: 375px;
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/mobile/index/Hero%20Section.png?raw=true");
     background-size: cover;
@@ -448,7 +416,7 @@ p{
 }
 
 .hero-content{
-    max-width: 375px;
+    width: 100%;
     height: auto;
     padding-left: 24px;
     padding-top:24px;
